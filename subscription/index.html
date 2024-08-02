@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="banner">
+    <header>
+    <div class="logo">
+        <a href="">Nutrition</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../food.html">Food Search</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../ai.html">Ai Coach</a></li>
+            <li><a href="CONTACT/index.html">Contact Us</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="signup.html">sign up</a></li>
+        </ul>
+    </nav>
+</header>
+<div id='divnew'>
+    <div class="subscription-container">
+        <h1>Choose Your Plan</h1>
+        <div class="plan-options">
+            <div class="plan-card" data-plan="basic">
+                <h2>Basic Plan</h2>
+                <p>$10 / month</p>
+                <p>Access to basic features</p>
+                <input type="radio" name="plan" id="basicPlan" value="basic" checked>
+                <label for="basicPlan" class="plan-label"></label>
+                <button type="button" class="subscribe-button"><a href="login.html">Subscribe</a></button>
+            </div>
+            <div class="plan-card" data-plan="standard">
+                <h2>Standard Plan</h2>
+                <p>$20 / month</p>
+                <p>Access to standard features</p>
+                <input type="radio" name="plan" id="standardPlan" value="standard">
+                <label for="standardPlan" class="plan-label"></label>
+                <button type="button" class="subscribe-button"><a href="login.html">Subscribe</a></button>
+            </div>
+            <div class="plan-card" data-plan="premium">
+                <h2>Premium Plan</h2>
+                <p>$30 / month</p>
+                <p>Access to all features</p>
+                <input type="radio" name="plan" id="premiumPlan" value="premium">
+                <label for="premiumPlan" class="plan-label"></label>
+                <button type="button" class="subscribe-button"><a href="login.html">Subscribe</a></button>
+            </div>
+        </div>
+        <div id="confirmationMessage" class="hidden"></div>
+    </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
